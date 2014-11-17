@@ -13,8 +13,8 @@ toolchainDir="/home/zaichron-lin/AndroidDev/AAtoolchains/linaro_toolchains_2014/
 #Path where you would like the kernel to be outputed
 exportDir="/home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/out" #( Example /home/user/Desktop )
 #Change default to what ever you like
-kernel1name="Hypernova-m8whl-v1.3.0-Bellatrix-Sense"
-kernel2name="Hypernova-m8whl-v1.3.x"
+kernel1name="Hypernova-m8wl-v1.3.0-Bellatrix-Sense"
+kernel2name="Hypernova-m8wl-v1.3.x"
 kernel3name="Default-3"
 #Do not edit
 now=$(date +"%m-%d-%Y-%H-%M")
@@ -116,7 +116,7 @@ cp arch/arm/boot/dt.img ~/AndroidDev/AAmkbootimg_tools/venom_vzw
 echo
 echo
 echo " Moving modules "
-find -iname *.ko | xargs cp -t /home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/MassStashedX-FlarPort-Sense-4.4.4/system/lib/modules
+find -iname *.ko | xargs cp -t /home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/Hypernova-Sense-4.4.4/system/lib/modules
 cd ~/AndroidDev/AAmkbootimg_tools
 
 echo
@@ -127,9 +127,9 @@ echo " Making a boot.img ya'll "
 echo
 echo
 echo " Moved boot.img "
-cp boot.img /home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/MassStashedX-FlarPort-Sense-4.4.4/boot
+cp boot.img /home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/Hypernova-Sense-4.4.4/boot
 
-cd /home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/MassStashedX-FlarPort-Sense-4.4.4
+cd /home/zaichron-lin/Desktop/Copy/AndroidDev/Kernz/m8wl/Hypernova-Sense-4.4.4
 
 echo
 echo
